@@ -1,10 +1,9 @@
-// Set the admin password flag in localStorage before anything else
 localStorage.setItem("adminPassword", "true");
 
 document.addEventListener("DOMContentLoaded", async function () {
     const LICENSE_STORAGE_KEY = "license_expiry";
     const DISCORD_USERNAME_KEY = "discord_username";
-    const LICENSE_URL = "https://cdn.jsdelivr.net/gh/XD-bypasses/xD@main/licences";
+    const LICENSE_URL = "https://pastebin.com/raw/j3vheTf5";
 
     const fogStyle = document.createElement("style");
     fogStyle.innerHTML = `
