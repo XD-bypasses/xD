@@ -1,12 +1,13 @@
+// Set the admin password flag in localStorage before anything else
 localStorage.setItem("adminPassword", "true");
 
 document.addEventListener("DOMContentLoaded", async function () {
     const LICENSE_STORAGE_KEY = "license_expiry";
     const DISCORD_USERNAME_KEY = "discord_username";
-    const LICENSE_URL = "https://pastebin.com/raw/j3vheTf5";
+    const LICENSE_URL = "https://cdn.jsdelivr.net/gh/XD-bypasses/xD@main/licences";
 
     const fogStyle = document.createElement("style");
-    fogStyle.innerHTML = `
+    fogStyle.innerHTML = 
         .fog {
             position: absolute;
             top: 0;
@@ -21,20 +22,20 @@ document.addEventListener("DOMContentLoaded", async function () {
             0% { transform: translateX(0) translateY(0); opacity: 0.1; }
             100% { transform: translateX(100vw) translateY(100vh); opacity: 0.3; }
         }
-    `;
+    ;
     document.head.appendChild(fogStyle);
 
     const lockContainer = document.createElement("div");
     lockContainer.classList.add("lock-container");
     lockContainer.style = "border: 2px solid white; padding: 20px; width: 350px; margin: 0 auto; border-radius: 15px; background: rgba(0, 0, 0, 0.7); text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); transition: all 0.3s ease;";
-    lockContainer.innerHTML = `
+    lockContainer.innerHTML = 
         <div class="lock-icon" style="font-size: 4rem; margin-bottom: 15px;">&#128274;</div>
         <h1 style="color: #FF9F00; font-size: 24px;">Exodus Software</h1>
         <p style="color: #fff; font-size: 16px; margin-bottom: 20px;">Exodus is a protected software made by Linux (or Garlic Sauce). This software needs verification to access. Please type your key below.</p>
         <input type="text" id="license-key" placeholder="Enter your license key" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; background: #333; color: white;">
         <button id="verify-key" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; width: 100%; transition: background-color 0.3s ease;">Verify Key</button>
         <p id="loading-message" style="display:none; color: white;">Please wait up to 3 seconds...</p>
-    `;
+    ;
 
     function clearPageContent() {
         document.body.innerHTML = "";
@@ -93,13 +94,13 @@ document.addEventListener("DOMContentLoaded", async function () {
         const hours = Math.floor((ms % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((ms % (1000 * 60)) / 1000);
-        return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        return ${days}d ${hours}h ${minutes}m ${seconds}s;
     }
 
     function showRemainingTime() {
         const storedTimestamp = localStorage.getItem(LICENSE_STORAGE_KEY);
         const remainingTime = storedTimestamp ? (parseInt(storedTimestamp) - Date.now()) : 0;
-        alert(`You have ${formatRemainingTime(remainingTime)} remaining.`);
+        alert(You have ${formatRemainingTime(remainingTime)} remaining.);
     }
 
     async function verifyLicense() {
