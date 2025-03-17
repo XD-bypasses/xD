@@ -59,10 +59,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     function parseLicenseData(data) {
         const licenses = {};
-        const entries = data.split("}\n");
+        const entries = data.split('key:');  // Split by 'key:' to capture all the keys
         entries.forEach(entry => {
-            const keyMatch = entry.match(/key:(\S+)/);
-            const timeMatch = entry.match(/time:(.+)/);
+            const keyMatch = entry.match(/(\S+)\s+/); // Matches the key after 'key:'
+            const timeMatch = entry.match(/time:(\d+\s*(day|month|year|hour|minute)s?)/i); // Matches the expiration time
+
             if (keyMatch && timeMatch) {
                 const key = keyMatch[1].trim();
                 const time = timeMatch[1].trim();
