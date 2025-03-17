@@ -1,5 +1,11 @@
 {
-    "EXODUS-K3P8M2": { "expiry": "7 days" },
-    "EXODUS-T47L9Q": { "expiry": "2 months" },
-    "EXODUS-YX2B5N": { "expiry": "1 year" }
+  "EXODUS-T47L9Q": {
+    "expiry": "2 months"
+  },
+  "EXODUS-YX2B5N": {
+    "expiry": "1 year"
+  },
+  "USED-EXODUS-K3P8M2": {
+    "expiry": "7 days"
+  }
 }
