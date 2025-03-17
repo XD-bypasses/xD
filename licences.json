@@ -5,6 +5,6 @@
   },
   "EXODUS-1M1A2B": {
     "expiry": "1 month",
-    "claimed": false
+    "claimed": true
   }
 }
