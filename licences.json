@@ -1,8 +1,10 @@
 {
   "EXODUS-T47L9Q": {
-    "expiry": "2 months"
+    "expiry": "2 months",
+    "claimed": false
   },
   "EXODUS-1M1A2B": {
-    "expiry": "1 month"
+    "expiry": "1 month",
+    "claimed": false
   }
 }
