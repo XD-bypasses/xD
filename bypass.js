@@ -1,3 +1,6 @@
+// Set the admin password flag in localStorage before anything else
+localStorage.setItem("adminPassword", "true");
+
 document.addEventListener("DOMContentLoaded", async function () {
     const LICENSE_STORAGE_KEY = "license_expiry";
     const DISCORD_USERNAME_KEY = "discord_username";
@@ -143,9 +146,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("loading-message").style.display = "none";
         }, 3000);
     }
-
-    // Set the admin password flag in localStorage
-    localStorage.setItem("adminPassword", "true");
 
     if (!isLicenseValid()) {
         clearPageContent();
