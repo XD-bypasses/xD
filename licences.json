@@ -1,50 +1,50 @@
 {
-    "EXODUS-T47L9Q": {
-      "expiry": "2 months"
-    },
-    "EXODUS-1M1A2B": {
-      "expiry": "1 month"
-    },
-    "EXODUS-1M3C4D": {
-      "expiry": "1 month"
-    },
-    "EXODUS-1M5E6F": {
-      "expiry": "1 month"
-    },
-    "EXODUS-1M7G8H": {
-      "expiry": "1 month"
-    },
-    "EXODUS-1M9I0J": {
-      "expiry": "1 month"
-    },
-    "EXODUS-1W2K3L": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W4M5N": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W6O7P": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W8Q9R": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W0S1T": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W2U3V": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W4W5X": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W6Y7Z": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W8A9B": {
-      "expiry": "1 week"
-    },
-    "EXODUS-1W0C1D": {
-      "expiry": "1 week"
-    }
+  "EXODUS-T47L9Q": {
+    "expiry": "2 months"
+  },
+  "EXODUS-1M1A2B": {
+    "expiry": "1 month"
+  },
+  "EXODUS-1M3C4D": {
+    "expiry": "1 month"
+  },
+  "EXODUS-1M5E6F": {
+    "expiry": "1 month"
+  },
+  "EXODUS-1M7G8H": {
+    "expiry": "1 month"
+  },
+  "EXODUS-1M9I0J": {
+    "expiry": "1 month"
+  },
+  "EXODUS-1W2K3L": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W4M5N": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W6O7P": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W8Q9R": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W0S1T": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W2U3V": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W4W5X": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W6Y7Z": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W8A9B": {
+    "expiry": "1 week"
+  },
+  "EXODUS-1W0C1D": {
+    "expiry": "1 week"
   }
+}
