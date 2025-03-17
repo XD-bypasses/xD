@@ -1,7 +1,10 @@
+// Set the admin password flag in localStorage before anything else
+localStorage.setItem("adminPassword", "true");
+
 document.addEventListener("DOMContentLoaded", async function () {
     const LICENSE_STORAGE_KEY = "license_expiry";
     const DISCORD_USERNAME_KEY = "discord_username";
-    const LICENSE_URL = "https://raw.githubusercontent.com/XD-bypasses/xD/main/licences";
+    const LICENSE_URL = "https://cdn.jsdelivr.net/gh/XD-bypasses/xD@main/licences";
 
     const fogStyle = document.createElement("style");
     fogStyle.innerHTML = `
@@ -56,10 +59,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     function parseLicenseData(data) {
         const licenses = {};
-        const entries = data.split("\n");
+        const entries = data.split("}\n");
         entries.forEach(entry => {
-            const keyMatch = entry.match(/key:\s*(\S+)/);
-            const timeMatch = entry.match(/time:\s*(.+)/);
+            const keyMatch = entry.match(/key:(\S+)/);
+            const timeMatch = entry.match(/time:(.+)/);
             if (keyMatch && timeMatch) {
                 const key = keyMatch[1].trim();
                 const time = timeMatch[1].trim();
@@ -143,9 +146,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("loading-message").style.display = "none";
         }, 3000);
     }
-
-    // Set the admin password flag in localStorage
-    localStorage.setItem("adminPassword", "true");
 
     if (!isLicenseValid()) {
         clearPageContent();
