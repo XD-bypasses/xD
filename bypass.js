@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const LICENSE_STORAGE_KEY = "license_expiry";
     const DISCORD_USERNAME_KEY = "discord_username";
-    const LICENSE_URL = "https://raw.githubusercontent.com/XD-bypasses/xD/main/licences
-";
+    const LICENSE_URL = "https://raw.githubusercontent.com/XD-bypasses/xD/main/licences";
 
     const fogStyle = document.createElement("style");
     fogStyle.innerHTML = `
