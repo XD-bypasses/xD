@@ -485,31 +485,21 @@ async function DisplayContributors() {
 }
 DisplayContributors()
 
-function setLocalStorage(name, value) {
-    localStorage.setItem(name, value);
-}
+document.getElementById("main-content").style.display = "block";
 
-function getLocalStorage(name) {
-    return localStorage.getItem(name);
-}
+// Anti Crack
+const crackedCanvas = document.getElementById('CrackedCanvas');
+const crackedCtx = crackedCanvas.getContext('2d');
 
-function isTwoWeeksPassed(timestamp) {
-    const twoWeeksInMillis = 14 * 24 * 60 * 60 * 1000000
-    return Date.now() > (parseInt(timestamp) + twoWeeksInMillis);
-}
+crackedCanvas.width = window.innerWidth;
+crackedCanvas.height = window.innerHeight;
 
-const adminPassword = getLocalStorage("adminPassword");
-const passwordTimestamp = getLocalStorage("passwordTimestamp");
+crackedCtx.fillStyle = 'black';
+crackedCtx.fillRect(0, 0, crackedCanvas.width, crackedCanvas.height);
 
-if (!adminPassword || (passwordTimestamp && isTwoWeeksPassed(passwordTimestamp))) {
-    const password = prompt("type 1:");
-    if (password === "1") {
-        setLocalStorage("adminPassword", "true");
-        setLocalStorage("passwordTimestamp", Date.now().toString());
-        document.getElementById("main-content").style.display = "block";
-    } else {
-        location.reload();
-    }
-} else {
-    document.getElementById("main-content").style.display = "block";
-}
+crackedCtx.fillStyle = 'white';
+crackedCtx.font = '48px Arial';
+crackedCtx.textAlign = 'center';
+crackedCtx.textBaseline = 'middle';
+
+crackedCtx.fillText('Stop tryina crack my shit', crackedCanvas.width / 2, crackedCanvas.height / 2);
