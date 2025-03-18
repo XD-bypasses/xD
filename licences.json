@@ -1,14 +1,1 @@
-{
-  "EXODUS-J7INS3": {
-    "expiry": "1 day",
-    "claimed": true
-  },
-  "EXODUS-UN8F2D": {
-    "expiry": "1 month",
-    "claimed": true
-  },
-  "EXODUS-PW9C1V": {
-    "expiry": "1 month",
-    "claimed": true
-  }
-}
+{"EXODUS-J7INS3":{"expiry":"1 day","claimed":true},"EXODUS-UN8F2D":{"expiry":"1 month","claimed":true},"EXODUS-PW9C1V":{"expiry":"1 month","claimed":false},"EXODUS-P3SHX7":{"expiry":"1 week","claimed":false},"EXODUS-1KK4XT":{"expiry":"1 week","claimed":false},"EXODUS-HCVL3T":{"expiry":"1 week","claimed":false},"EXODUS-XHMM67":{"expiry":"1 week","claimed":false},"EXODUS-QTHR9B":{"expiry":"1 week","claimed":false},"EXODUS-0U7D49":{"expiry":"1 week","claimed":false},"EXODUS-BMGR3B":{"expiry":"1 week","claimed":false},"EXODUS-3Y5KGQ":{"expiry":"1 week","claimed":false},"EXODUS-HGMOB3":{"expiry":"1 week","claimed":false},"EXODUS-7UNCHG":{"expiry":"1 week","claimed":false}}
