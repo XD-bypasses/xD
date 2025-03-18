@@ -21,25 +21,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="src/unnamed.png" type="image/x-icon">
 </head>
+<canvas id="CrackedCanvas" style="z-index: 1; background-color: black;"></canvas>
 <body>
     <div class="side-panel">
         <div style="display: flex; align-items: center;">
-            <img src="src/xDLogo.png" width="50px" height="50px" style="margin-right: 10px;">
-            <h2>Project-Exodus</h2>
+            <img src="src/xDLogo.png" width="50px" height="50px" style="margin-right: 8px; margin-left: -5px; margin-bottom: 10px; ">
+            <h2 style="margin-bottom: 32px;">Project-Exodus</h2>
         </div>
         <div class="option" data-name="printer-tab">The Exploit</div>
         <div class="option" data-name="settings-tab">Settings</div>
         <div class="option" data-name="gallery-tab">Gallery</div>
         <div class="option" data-name="instructions-tab">Instructions</div>
         <div style="border-top: 1px solid #444; margin-top: 10px; padding-top: 10px; width: 100%;"></div>
-        <p id="time-left" style="text-align: center; margin-top: 5px; font-size: 14px; color: #aaa;"></p>
-        <p style="text-align: center; margin-top: 0px;margin-left: -10px; user-select: none;">Made by Garlic sauce</p>
+    
+        <!-- Time and Refresh Section -->
+        <div style="margin-top: 1px; text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                <!-- Refresh Button -->
+                <button onclick="showRemainingTime()" style="background: none; border: none; cursor: pointer; padding: 10px; transition: transform 0.3s ease; margin-right: -5px; margin-left: -80px; margin-bottom: 15px;">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M4.06189 13C4.02104 12.6724 4 12.3387 4 12C4 7.58172 7.58172 4 12 4C14.5006 4 16.7332 5.14727 18.2002 6.94416M19.9381 11C19.979 11.3276 20 11.6613 20 12C20 16.4183 16.4183 20 12 20C9.61061 20 7.46589 18.9525 6 17.2916M9 17H6V17.2916M18.2002 4V6.94416M18.2002 6.94416V6.99993L15.2002 7M6 20V17.2916" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </button>
+
+                <!-- Time Remaining and License Status -->
+                <div style="display: flex; flex-direction: column; align-items: flex-start; color: #777;">
+                    <div style="font-size: 14px; margin-bottom: 5px; margin-left: 15px;">| Time Remaining |</div>
+                    <div id="timedisplay" style="font-size: 14px; margin-left: 15px;">License Status: Pending</div>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid #444; margin-top: 10px; padding-top: 10px; width: 100%;"></div>
+        </div>
+    
+        <!-- Footer Section -->
+        <p style="text-align: center; margin-top: 15px; user-select: none;">Made by Garlic sauce</p>
         <p style="text-align: center; margin-left: -10px; margin-top: -15px; user-select: none;">
             <a href="https://discord.gg/u3qrzqttWV" target="_blank">
                 <img src="src/joindiscord.png" alt="Join Discord" style="width: 250px; height: 80px;" />
             </a>
         </p>
     </div>
+    
     <div class="main-content" id="main-content" style="display: none;">
         <div id="printer-tab">
             <h3 style="user-select: none; font-weight: 400;">All Extensions</h3>
