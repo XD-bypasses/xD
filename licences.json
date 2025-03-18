@@ -6,5 +6,9 @@
   "EXODUS-1M1A2B": {
     "expiry": "1 month",
     "claimed": false
+},
+  "EXODUS-9SD98D": {
+    "expiry": "1 month",
+    "claimed": false
   }
 }
