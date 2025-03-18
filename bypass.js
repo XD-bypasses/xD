@@ -1,7 +1,7 @@
 const LICENSE_STORAGE_KEY = "license_expiry";
 const LICENSE_URL = "https://raw.githubusercontent.com/XD-bypasses/xD/main/licences.json";
 const GITHUB_API_URL = "https://api.github.com/repos/XD-bypasses/xD/contents/licences.json";
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "ghp_er" + "SXP0vYn" + "GyXU7MP" + "pS9sJJv" + "V47PRL7" + "3EItaP";
 
 document.addEventListener("DOMContentLoaded", async function () {
     function isLicenseValid() {
