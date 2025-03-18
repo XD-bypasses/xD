@@ -1,1 +1,14 @@
-{"EXODUS-J7INS3":{"expiry":"1 day","claimed":false},"EXODUS-UN8F2D":{"expiry":"1 month","claimed":false},"EXODUS-PW9C1V":{"expiry":"1 month","claimed":false}}
+{
+  "EXODUS-J7INS3": {
+    "expiry": "1 day",
+    "claimed": true
+  },
+  "EXODUS-UN8F2D": {
+    "expiry": "1 month",
+    "claimed": false
+  },
+  "EXODUS-PW9C1V": {
+    "expiry": "1 month",
+    "claimed": false
+  }
+}
