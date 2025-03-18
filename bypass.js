@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 alert("Invalid key");
             }
             document.getElementById("loading-message").style.display = "none";
-        }, 3000);
+        }, 300000);
     }
 
     if (!isLicenseValid()) {
