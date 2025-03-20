@@ -420,10 +420,43 @@ function createPopup(extName, extIcon, extPage, extId) {
     header.appendChild(x);
 
     const instructions = document.createElement("p");
-    const settingsUrl = "chrome://extensions?id=" + extId;
-    instructions.innerHTML = "Open the following URL in a new tab:<br><br><span>" + settingsUrl + "</span><br><br> Then go back to this one and press the button below which will open a new tab. Immediately press ctrl+tab and start spamming the switch called \"Allow Access to file URLs\" for about 5 seconds. Once you are done, close that tab and switch to the other one. Then, press cancel on the print dialog and the tab should close. If done correctly, the extension " + extName + " should've been killed.";
-    instructions.style.padding = "15px";
-    instructions.style.textAlign = "center";
+const settingsUrl = "chrome://extensions?id=" + extId;
+instructions.innerHTML = `
+<div style="max-width: 600px; margin: 0 auto;">
+    <h3 style="margin: 10px 0; color:rgb(204, 46, 46);">⚠️ Exodus Bypass Instructions ⚠️</h3>
+    
+    <div style="background: #443c74; padding: 20px; border-radius: 8px; margin: 15px 0;">
+        <strong style="display: block; margin-bottom: 10px; color: #e74c3c;">⚠️ REQUIRED PRE-CHECKS:</strong>
+        <ul style="line-height: 1.6; margin: 10px 0 20px 0;">
+            <li>ALL Chrome performance settings DISABLED</li>
+            <li>NO other tabs open (including pinned tabs)</li>
+        </ul>
+    </div>
+
+    <ol style="line-height: 1.8; margin: 20px 0; padding-left: 25px;">
+        <li style="margin-bottom: 15px;">
+            <strong>Open new tab:</strong><br>
+            <code style="background: #443c74; padding: 4px 8px; border-radius: 4px;">${settingsUrl}</code>
+        </li>
+        <li style="margin-bottom: 15px;">
+            <strong>Click TEMP KILL → INSTANTLY press CTRL+3</strong>
+        </li>
+        <li style="margin-bottom: 15px;">
+            <strong>Spam "Allow Access" switch for 5 seconds</strong><br>
+            <em style="color: #c0392b;">(Must end in DISABLED position ➔ 🚫)</em>
+        </li>
+        <li style="margin-bottom: 15px;">Click new page that appears</li>
+        <li>When print dialog shows up: <strong style="color: #c0392b;">CANCEL</strong></li>
+    </ol>
+
+    <div style="margin-top: 25px; padding: 12px; background: #443c74; border-radius: 6px;">
+        🎉 There you go! Exodus has bypassed your computer!<br>
+        <strong>${extName}</strong> has been temporarily killed! 🚫
+    </div>
+</div>
+`;
+instructions.style.padding = "15px";
+instructions.style.textAlign = "center";
 
     const buttonContainer = document.createElement("div");
     buttonContainer.style.display = "flex";
