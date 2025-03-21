@@ -1,6 +1,24 @@
-fileNames = ["exodus.html", "bypass.js", "particles.js", "script.js", "style.css"];
-"https://raw.githubusercontent.com/XD-bypasses/xD/main/exodus.html",
-                "https://raw.githubusercontent.com/XD-bypasses/xD/main/bypass.js",
-                "https://raw.githubusercontent.com/XD-bypasses/xD/main/particles.js",
-                "https://raw.githubusercontent.com/XD-bypasses/xD/main/script.js",
-                "https://raw.githubusercontent.com/XD-bypasses/xD/main/style.css"
+{
+  "files": [
+    {
+      "name": "exodus.html",
+      "url": "https://raw.githubusercontent.com/XD-bypasses/xD/main/exodus.html"
+    },
+    {
+      "name": "bypass.js",
+      "url": "https://raw.githubusercontent.com/XD-bypasses/xD/main/bypass.js"
+    },
+    {
+      "name": "particles.js",
+      "url": "https://raw.githubusercontent.com/XD-bypasses/xD/main/particles.js"
+    },
+    {
+      "name": "script.js",
+      "url": "https://raw.githubusercontent.com/XD-bypasses/xD/main/script.js"
+    },
+    {
+      "name": "style.css",
+      "url": "https://raw.githubusercontent.com/XD-bypasses/xD/main/style.css"
+    }
+  ]
+}
