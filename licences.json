@@ -65,7 +65,7 @@
   },
   "EXODUS-BSEPQI": {
     "expiry": "2 week",
-    "claimed": false
+    "claimed": true
   },
   "EXODUS-2D6WN7": {
     "expiry": "1 month",
