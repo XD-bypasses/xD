@@ -73,7 +73,7 @@
   },
   "EXODUS-DA5OID": {
     "expiry": "1 month",
-    "claimed": false
+    "claimed": true
   },
   "EXODUS-LBSKSL": {
     "expiry": "1 month",
