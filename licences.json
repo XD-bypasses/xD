@@ -45,7 +45,7 @@
   },
   "EXODUS-HGMOB3": {
     "expiry": "1 week",
-    "claimed": false
+    "claimed": true
   },
   "EXODUS-7UNCHG": {
     "expiry": "1 week",
