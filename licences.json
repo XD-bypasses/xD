@@ -117,7 +117,7 @@
   },
   "EXODUS-BYKSGS": {
     "expiry": "1 week",
-    "claimed": true
+    "claimed": false
   },
   "EXODUS-9JIUXR": {
     "expiry": "1 week",
@@ -145,6 +145,6 @@
   },
   "EXODUS-5F7WBV": {
     "expiry": "3 month",
-    "claimed": false
+    "claimed": true
   }
 }
